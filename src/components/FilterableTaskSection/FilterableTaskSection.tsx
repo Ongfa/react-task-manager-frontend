@@ -15,11 +15,6 @@ const FilterableTaskSection: React.FC<Props> = ({ status, tasks, onUpdate, onDel
 
   const toggleCollapse = () => setCollapsed((prev) => !prev);
 
-  const statusColor = {
-    'Pending': '#9ca3af',      // Gray
-    'In Progress': '#facc15',  // Yellow
-    'Completed': '#4ade80',    // Green
-  };
 
   return (
     <div style={{ marginBottom: '1.5rem', backgroundColor: '#f3f4f6', borderRadius: '8px' }}>
@@ -49,7 +44,7 @@ const FilterableTaskSection: React.FC<Props> = ({ status, tasks, onUpdate, onDel
             <p style={{ fontStyle: 'italic', color: '#9ca3af' }}>No tasks</p>
           ) : (
             tasks.map((task) => (
-              <TaskItem key={task.id} task={task} onUpdate={onUpdate} onDelete={onDelete} />
+              <TaskItem key={task.id} task={task} onDelete={onDelete} />
             ))
           )}
         </div>
