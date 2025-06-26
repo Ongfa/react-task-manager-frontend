@@ -36,12 +36,6 @@ const EditTaskPage: React.FC = () => {
 
   const statusOptions: TaskStatus[] = ['Pending', 'In Progress', 'Completed'];
 
-  const statusColors: Record<TaskStatus, string> = {
-    Pending: '#9ca3af',
-    'In Progress': '#facc15',
-    Completed: '#4ade80',
-  };
-
   if (!task) return <p style={{ padding: '2rem' }}>Task not found.</p>;
 
   return (
