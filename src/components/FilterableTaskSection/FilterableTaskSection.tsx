@@ -10,7 +10,7 @@ interface Props {
   onDelete: (id: string) => void;
 }
 
-const FilterableTaskSection: React.FC<Props> = ({ status, tasks, onUpdate, onDelete }) => {
+const FilterableTaskSection: React.FC<Props> = ({ status, tasks, onDelete }) => {
   const [collapsed, setCollapsed] = useState(false);
 
   const toggleCollapse = () => setCollapsed((prev) => !prev);
