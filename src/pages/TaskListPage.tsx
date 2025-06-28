@@ -135,16 +135,18 @@ const TaskListPage: React.FC = () => {
           />
         </div>
 
-        {/* Task Sections */}
-        {statuses.map((status) => (
-          <FilterableTaskSection
-            key={status}
-            status={status}
-            tasks={filteredTasks.filter((t) => t.status === status)}
-            onUpdate={updateTask}
-            onDelete={deleteTask}
-          />
-        ))}
+    <div style={{ maxHeight: '60vh', overflowY: 'auto', paddingRight: '8px' }}>
+    {statuses.map((status) => (
+        <FilterableTaskSection
+        key={status}
+        status={status}
+        tasks={filteredTasks.filter((t) => t.status === status)}
+        onUpdate={updateTask}
+        onDelete={deleteTask}
+        />
+    ))}
+</div>
+
       </div>
 
       {/* Floating Add Button */}
