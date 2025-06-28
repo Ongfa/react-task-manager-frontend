@@ -53,3 +53,37 @@ input, select, button, textarea {
   font-size: 1rem;
 }
 
+.header {
+  background-color: #0b4c91;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.5rem;
+  font-weight: 200;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.fab {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #0b4c91;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+

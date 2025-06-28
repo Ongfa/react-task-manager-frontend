@@ -4,6 +4,7 @@ import TaskListPage from './pages/TaskListPage';
 import AddTaskPage from './pages/AddTaskPage';
 import EditTaskPage from './pages/EditTaskPage';
 import { TaskProvider } from './context/TaskContext';
+import './App.css';
 
 const App = () => (
   <TaskProvider>
